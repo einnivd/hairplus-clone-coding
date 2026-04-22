@@ -1,0 +1,144 @@
+.wrap {
+  background-color: #d2e5ff;
+}
+/* 헤더 */
+header {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #bcd8ff;
+}
+/* 로고 */
+.header-logo img {
+  width: 120px;
+  padding: 10px 20px;
+}
+/* 헤더 오른쪽 */
+.header-right {
+  display: flex;
+  gap: 50px;
+}
+/* 할인 배너 */
+.discount {
+  width: 120px;
+  height: 60px;
+  padding: 5px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #0043a3;
+}
+/* 메뉴 */
+.header-menu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.my {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+/* view-more */
+.view-more {
+  width: 80px;
+  padding: 20px;
+  text-align: center;
+}
+.view-more i {
+  width: 100%;
+}
+/* 메인 */
+main .inner{
+    width: 1400px;
+    margin: auto;
+    background-color: silver;
+}
+/* 영상 */
+.video {
+  background-color: thistle;
+}
+.video video {
+  width: 100%;
+  height: 800px;
+}
+/* 제품 소개 */
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.about-txt{
+    margin: auto;
+    display: flex;
+    line-height: 50px;
+    flex-direction: column;
+    align-items: center;
+    color: #0043A3;
+}
+.about-detail{
+    margin: auto;
+    display: flex;
+    gap: 80px;
+}
+.about-detail .question{
+    width: 450px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 50px 50px 0 0;
+    color: #fff;
+    background-color: #0043A3;
+}
+.about-detail .answer{
+    width: 450px;
+    height: 120px;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 0 0 50px 50px;
+    color: #0043A3;
+    background-color: #fff;
+}
+.about-detail .box{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.about-detail .answer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1 0%;
+}
+/* 제품 소개 좌측 */
+.about-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+}
+/* 제품 소개 우측 */
+.about-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+}
+/* 제품 특징 */
