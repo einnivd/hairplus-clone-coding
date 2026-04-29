@@ -16,20 +16,39 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/gotop.js"></script>
+    <script src="js/modal.js"></script>
   </head>
   <body>
+    <!-- 모달창 -->
+    <div class="modal-wrap">
+      <div class="modal-box">
+        <!-- 모달창 notice -->
+        <div class="modal-notice">
+          <p>첫 구매 고객님께만 드리는</p>
+          <p>50% 반값 혜택</p>
+        </div>
+        <!-- 모달 버튼 -->
+        <div class="modal-btn">
+          <a href="#"><p>지금 혜택받기</p></a>
+        </div>
+        <!-- 모달창 닫기 -->
+        <div class="modal-close">
+          <div class="chech-box">
+            <input type="checkbox" id="check1" />
+            <label for="check">오늘 하루 보지않기</label>
+          </div>
+          <i id="close">× 닫기</i>
+        </div>
+      </div>
+    </div>
     <!-- gotop -->
     <span id="gotop">
       <i class="fa-solid fa-arrow-up"></i>
     </span>
     <!-- 구매하러가기 버튼 -->
-     <section class="purchase-btn">
-      <a href="#"><h3>구매하러가기 →</h3></a>
-     </section>
-      <!-- 할인 배너 모달창-->
-          <box class="discount">
-            <p>첫구매 50% 할인</p>
-          </box>
+    <section class="purchase-btn">
+      <a ><h3>구매하러가기 →</h3></a>
+    </section>
     <!-- 전체 영역 -->
     <div class="wrap">
       <!-- 헤더 -->

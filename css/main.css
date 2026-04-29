@@ -1,3 +1,71 @@
+/* 모달창 */
+.modal-wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+.modal-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 250px;
+  background: linear-gradient(#fff, #b2d1ff);
+  border-radius: 50px 50px 0 0;
+}
+.modal-notice {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.modal-notice p {
+  color: #0043a3;
+  font-weight: bold;
+  font-size: 20px;
+  white-space: nowrap;
+}
+.modal-notice p:nth-child(2){
+  font-size: 36px;
+}
+.modal-btn {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #0043a3;
+  line-height: 50px;
+  padding: 0 30px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.modal-btn a {
+  color: #fff;
+}
+.modal-close {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  line-height: 30px;
+  color: #fff;
+  background-color: #333;
+}
+.modal-close .chech-box,
+.modal-close i {
+  font-size: 13px;
+  cursor: pointer;
+}
 /* gotop */
 #gotop {
   position: fixed;
@@ -12,46 +80,17 @@
   display: none;
 }
 /* 구매하러가기 버튼 */
-.purchase-btn{
+.purchase-btn {
   position: fixed;
   bottom: 200px;
   right: 50px;
   width: 180px;
   line-height: 50px;
   text-align: center;
-  border: 3px solid #85B6FF;
+  border: 3px solid #85b6ff;
   border-radius: 50px;
-  background: linear-gradient(to right, #B2D1FF, #fff);
-}
-/* 할인 배너 */
-.discount {
-  position: fixed;
-  bottom: 270px;
-  right: 70px;
-  width: 140px;
-  /* height: 60px; */
-  line-height: 25px;
-  padding: 5px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #000;
-  text-align: center;
-  border-radius: 30px;
-  background-color: #ffff00;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  animation: updown 1.5s infinite;
+  background: linear-gradient(to right, #b2d1ff, #fff);
   cursor: pointer;
-}
-@keyframes updown {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
 }
 .wrap {
   /* width: 1920px; */
@@ -70,6 +109,7 @@ header {
   justify-content: space-between;
   /* background-color: #bcd8ff; */
   background-color: #fff;
+  box-shadow:  0 5px 10px rgba(0, 0, 0, 0.1);
 }
 /* 로고 */
 .header-logo img {
@@ -87,11 +127,11 @@ header {
   display: flex;
   gap: 30px;
   align-items: center;
-  font-size: 10px
+  font-size: 10px;
 }
-.header-menu i{
- font-size: 20px;
- /* font-weight: 400; */
+.header-menu i {
+  font-size: 20px;
+  /* font-weight: 400; */
 }
 .login {
   display: flex;
@@ -119,8 +159,8 @@ header {
   font-size: 25px;
 }
 /* 메인 */
-main{
-   margin-top: 80px;
+main {
+  margin-top: 80px;
 }
 main .inner {
   /* position: relative; */
@@ -145,6 +185,7 @@ main .inner {
 }
 .about-txt {
   margin: auto;
+  margin-top: 100px;
   display: flex;
   line-height: 50px;
   flex-direction: column;

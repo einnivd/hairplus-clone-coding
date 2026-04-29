@@ -16,6 +16,7 @@ header {
   /* background-color: #bcd8ff; */
   background-color: #fff;
   /* opacity: 0; */
+  box-shadow:  0 5px 10px rgba(0, 0, 0, 0.1);
 }
 /* 로고 */
 .header-logo img {
@@ -73,31 +74,106 @@ main .inner {
   margin: auto;
   padding: 80px 0;
 }
+main .inner h1{
+  color: #0043a3;
+  padding-bottom: 30px;
+}
+/* 스토리 */
 .story {
   display: flex;
   align-items: center;
   gap: 50px;
 }
-.story-img{
-    width: 300px;
-    /* background-color: yellowgreen; */
+.story-img {
+  width: 250px;
+  /* background-color: yellowgreen; */
 }
-.story-img img{
-    width: 100%;
-    /* display: block; */
+.story-img img {
+  width: 100%;
+  /* display: block; */
 }
-.story-txt{
-    color: #0043A3;
+.story-txt {
+  color: #0043a3;
 }
-.story-keyword{
-    display: flex;
-    justify-content: space-between;
+/* 키워드 */
+.story-keyword {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
 }
-.story-keyword .txt{
-    display: flex;
+.story-keyword .txt {
+  color: #0043a3;
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
-.story-keyword .keyword{
-    width: 130px;
-    height: 130px;
-    background-color: #84abe0;
+.story-keyword .keyword {
+  min-width: 130px;
+  height: 130px;
+  background: radial-gradient(circle, #ffffff, #c4dbfd, #72abff);
+  border-radius: 10px 100px 100px 100px;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.story-keyword h3 {
+  margin: 0;
+}
+.story-keyword .desc {
+}
+/* 푸터 */
+footer {
+  /* width: 1920px; */
+  height: 377px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #022b65;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+footer .inner {
+  width: 750px;
+  margin: auto;
+  /* background-color: rgb(60, 138, 95); */
+}
+footer ul {
+  display: flex;
+}
+.company,
+.tel,
+.address,
+.sns,
+.copyright {
+  margin: 30px 0;
+}
+/* 회사주소 */
+.address {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* SNS */
+.sns ul {
+  gap: 22px;
+}
+.sns ul li {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: #bcd8ff;
+}
+.sns img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+}
+footer span {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  margin: 0 15px;
 }
