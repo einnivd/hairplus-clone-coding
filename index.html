@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>헤어플러스</title>
-
+    <!-- jQuery cookie 플러그인 불러오기 (쿠키를 쉽게 다룰 수 있게 해줌) -->
+    <script src="js/jquery-1.12.3.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"
+      integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- 폰트어썸 -->
     <link
       rel="stylesheet"
@@ -13,6 +20,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- css, js -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/gotop.js"></script>
@@ -24,7 +32,7 @@
       <div class="modal-box">
         <!-- 모달창 notice -->
         <div class="modal-notice">
-          <p>첫 구매 고객님께만 드리는</p>
+          <p>첫구매 고객님께만 드리는</p>
           <p>50% 반값 혜택</p>
         </div>
         <!-- 모달 버튼 -->
@@ -34,7 +42,7 @@
         <!-- 모달창 닫기 -->
         <div class="modal-close">
           <div class="chech-box">
-            <input type="checkbox" id="check1" />
+            <input type="checkbox" id="check" />
             <label for="check">오늘 하루 보지않기</label>
           </div>
           <i id="close">× 닫기</i>
