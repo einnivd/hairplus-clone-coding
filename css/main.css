@@ -92,6 +92,7 @@
   background: linear-gradient(to right, #b2d1ff, #fff);
   cursor: pointer;
 }
+/* 전체 영역 */
 .wrap {
   /* width: 1920px; */
   margin: auto;
