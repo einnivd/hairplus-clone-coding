@@ -126,8 +126,8 @@ main .inner {
   gap: 20px;
 }
 .produce .txt h1,
-h3,
-h4 {
+.produce .txt h3,
+.produce .txt h4 {
   margin: auto;
 }
 .produce .txt h1 {
@@ -148,7 +148,7 @@ h4 {
   display: flex;
   /* align-items: center; */
   /* width: 50%; */
- max-width: 800px;
+  max-width: 800px;
 
   /* background-color: yellowgreen; */
 }
@@ -163,18 +163,18 @@ h4 {
   display: flex;
   flex-direction: column;
   width: 25%;
-  max-width:  300px;
+  max-width: 300px;
 }
 /* 자가진단 체크리스트 */
 .self-test {
   position: relative;
   width: 650px;
   margin: 100px auto;
-  background-color: violet;
+  /* background-color: violet; */
 }
 .self-test .title {
   position: absolute;
-  top: -7%;
+  top: -3%;
   left: 50%;
   transform: translateX(-50%);
   margin: auto;
@@ -189,25 +189,42 @@ h4 {
 }
 .self-test img {
   position: absolute;
-  top: -13%;
+  top: -7%;
   right: 13%;
 }
-.self-test .check-list {
-  /* position: absolute;
-  top: 40px; */
+.check-paper {
   background-color: #ffffff;
   width: 100%;
-  padding: 100px 50px;
+  padding: 100px 50px 0;
+  border-radius: 50px;
+}
+.self-test .check-list {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
 }
 .self-test .check-list li {
   display: flex;
   gap: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+}
+.self-test .check-list li:nth-child(7) {
+  border: none;
 }
 .self-test .check-list li input {
   width: 25px;
+}
+.check-result {
+  margin-top: 50px;
+  padding: 70px 0 100px;
+  border-top: 1px dashed #999;
+}
+.check-result p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #0043a3;
 }
 /* 제품 특장점 */
 .specialty {
@@ -221,10 +238,145 @@ h4 {
   flex-direction: column;
   align-items: center;
 }
-.specialty .spec h3{
+.specialty .spec h3 {
   margin: 20px;
 }
 .specialty .spec p {
   text-align: center;
 }
 /* 포인트 */
+/* point-title 위치 */
+.point {
+  margin: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+#point-1 {
+  position: relative;
+}
+#point-1 .point-title {
+  position: absolute;
+  top: -30px;
+  left: -40px;
+}
+#point-2 {
+  position: relative;
+}
+#point-2 .point-title {
+  position: absolute;
+  top: -30px;
+  left: -40px;
+}
+#point-3 {
+  position: relative;
+}
+#point-3 .point-title {
+  position: absolute;
+  top: -30px;
+  left: -40px;
+}
+/* point-title */
+.point-title {
+  display: flex;
+  z-index: 999;
+}
+.point-title h2:nth-child(1) {
+  background-color: #0043a3;
+  padding: 20px 60px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 30px 0 0 30px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.point-title h2:nth-child(2) {
+  background-color: #ffffff;
+  padding: 20px 100px;
+  color: #0043a3;
+  border-radius: 0 30px 30px 0;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+/* point-desc */
+.point-desc-1,
+.point-desc-2,
+.point-desc-3 {
+  width: 1000px;
+  padding: 50px 0;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.point-desc-1 .img-box,
+.point-desc-2 .img-box {
+  width: 600px;
+  margin: 50px auto;
+  /* background-color: yellow; */
+}
+.point-desc-1 img,
+.point-desc-2 img {
+  width: 100%;
+  display: block;
+}
+.point-desc-1 .txt-box {
+  padding: 30px;
+  width: 650px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  font-weight: bold;
+  color: #0043a3;
+}
+.point-desc-2 .txt-box {
+  padding: 30px;
+  width: 800px;
+  margin: auto;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  color: #0043a3;
+}
+/* 향기 노트 */
+.fragrance{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
+  margin: 50px 0;
+}
+#fragrance-box{
+  width: 250px;
+  height: 370px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.point-desc-3 .img-box{
+  width: 225px;
+  margin: 12px auto;
+  background-color: #3b51b4;
+}
+.point-desc-3 .middle .img-box,
+.point-desc-3 .base .img-box{
+  opacity: 90%;
+}
+.point-desc-3 .img{
+  width: 100%;
+  display: block;
+}
+#fragrance-box .txt{
+  padding: 0 15px;
+  color: #0043a3;
+  opacity: 80%;
+}
+#fragrance-box .txt h3{
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+#fragrance-box .txt p{
+  padding-top: 10px;
+}
+/* 하단 텍스트 */
+.point-txt{
+  color: #0043a3;
+  text-align: center;
+  font-weight: bold;
+}
+
