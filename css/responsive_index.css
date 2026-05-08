@@ -1,9 +1,42 @@
 @import url("reset.css");
 /* 480 */
 @media (max-width: 480px) {
+  /* 모달창 */
+  .modal-box{
+    width: 1000px;
+    height: 625px;
+    border-radius: 100px 100px 0 0;
+  }
+  .modal-notice h4{
+    font-size: 50px;
+  }
+  .modal-notice h1{
+    font-size: 100px;
+  }
+.modal-btn{
+  width: 500px;
+  height: 100px;
+  border-radius: 50px;
+}
+.modal-btn p{
+  font-size: 40px;
+  text-align: center;
+  line-height: 100px;
+}
+.modal-close{
+  height: 60px;
+}
+.modal-close .check-box,
+.modal-close i {
+  font-size: 30px;
+  line-height: 60px;
+}
+}
+  /* 비디오 */
   .video {
     width: 1400px;
   }
+  /* 제품 소개 */
   .about-txt h2 {
     font-size: 40px;
   }
