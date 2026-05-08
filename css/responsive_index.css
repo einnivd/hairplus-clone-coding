@@ -1,0 +1,73 @@
+@import url("reset.css");
+/* 480 */
+@media (max-width: 480px) {
+  .video {
+    width: 1400px;
+  }
+  .about-txt h2 {
+    font-size: 40px;
+  }
+  .about-txt h1 {
+    font-size: 60px;
+    margin: 30px 0;
+  }
+  .about-detail {
+    flex-direction: column; /* 전체 요소를 세로로 배치 */
+    padding: 20px;
+    gap: 20px;
+  }
+  .about-detail img {
+    order: 1; /* 샴푸 이미지를 가장 위(첫 번째)로 배치 */
+    margin: auto;
+    width: 210px;
+    height: 580px;
+  }
+
+  .about-left {
+    order: 2; /* 왼쪽 카드 그룹을 두 번째로 */
+    width: 100%;
+  }
+
+  .about-right {
+    order: 3; /* 오른쪽 카드 그룹을 세 번째로 */
+    width: 100%;
+  }
+  .card {
+    gap: 15px;
+  }
+  .about-detail .question {
+    width: 1000px;
+    height: 100px;
+    font-size: 30px;
+    line-height: 100px;
+  }
+  .about-detail .answer {
+    width: 1000px;
+    height: 200px;
+    font-size: 30px;
+  }
+}
+
+/* 제품 특징 */
+
+/* [모바일] 480px 이하 시 스타일 */
+@media screen and (max-width: 480px) {
+  .product-info-section .swiper-wrapper {
+    display: flex; /* Swiper가 다시 제어하도록 설정 */
+    gap: 0;
+    padding: 0;
+  }
+  .spec-1,
+  .spec-2,
+  .spec-3 {
+    /* max-width: none; */
+    flex: 1; /* 동일한 너비 공유 */
+    width: 800px;
+    height: 610px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  }
+}
