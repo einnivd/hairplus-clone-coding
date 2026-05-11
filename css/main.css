@@ -26,13 +26,13 @@
   flex-direction: column;
   gap: 10px;
 }
-.modal-notice h4{
+.modal-notice h4 {
   color: #0043a3;
   font-weight: bold;
   font-size: 20px;
   white-space: nowrap;
 }
-.modal-notice h1{
+.modal-notice h1 {
   color: #0043a3;
   font-weight: bold;
   font-size: 36px;
@@ -113,7 +113,7 @@ header {
   justify-content: space-between;
   /* background-color: #bcd8ff; */
   background-color: #fff;
-  box-shadow:  0 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 /* 로고 */
 .header-logo img {

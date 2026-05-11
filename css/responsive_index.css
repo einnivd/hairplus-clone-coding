@@ -1,41 +1,4 @@
-@import url("reset.css");
-/* 480 */
-@media (max-width: 480px) {
-  /* 모달창 */
-  .modal-box{
-    width: 1000px;
-    height: 625px;
-    border-radius: 100px 100px 0 0;
-  }
-  .modal-notice h4{
-    font-size: 50px;
-  }
-  .modal-notice h1{
-    font-size: 100px;
-  }
-.modal-btn{
-  width: 500px;
-  height: 100px;
-  border-radius: 50px;
-}
-.modal-btn p{
-  font-size: 40px;
-  text-align: center;
-  line-height: 100px;
-}
-.modal-close{
-  height: 60px;
-}
-.modal-close .check-box,
-.modal-close i {
-  font-size: 30px;
-  line-height: 60px;
-}
-}
-  /* 비디오 */
-  .video {
-    width: 1400px;
-  }
+@media (max-width: 1250px) {
   /* 제품 소개 */
   .about-txt h2 {
     font-size: 40px;
@@ -53,7 +16,7 @@
     order: 1; /* 샴푸 이미지를 가장 위(첫 번째)로 배치 */
     margin: auto;
     width: 210px;
-    height: 580px;
+    /* height: 580px; */
   }
 
   .about-left {
@@ -69,15 +32,71 @@
     gap: 15px;
   }
   .about-detail .question {
-    width: 1000px;
+    /* width: 1000px; */
     height: 100px;
-    font-size: 30px;
+    /* font-size: 30px; */
     line-height: 100px;
   }
   .about-detail .answer {
-    width: 1000px;
+    /* width: 1000px; */
     height: 200px;
-    font-size: 30px;
+    /* font-size: 30px; */
+  }
+  .spec {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .companyUl {
+    flex-wrap: wrap;
+  }
+}
+/* 480 */
+
+@media (max-width: 480px) {
+  header{
+    /* max-width: 390px; */
+    width: 100%;
+  }
+  /* 모달창 */
+  .modal-box {
+    /* width: 1000px; */
+    height: 625px;
+    border-radius: 100px 100px 0 0;
+  }
+  .modal-notice h4 {
+    /* font-size: 50px; */
+  }
+  .modal-notice h1 {
+    font-size: 100px;
+  }
+  .modal-btn {
+    /* width: 500px; */
+    height: 100px;
+    border-radius: 50px;
+  }
+  .modal-btn p {
+    /* font-size: 40px; */
+    text-align: center;
+    line-height: 100px;
+  }
+  .modal-close {
+    height: 60px;
+  }
+  .modal-close .check-box,
+  .modal-close i {
+    /* font-size: 30px; */
+    line-height: 60px;
+  }
+  /* 비디오 */
+  .spec-2{
+  width: 80%;
+   
+    min-width: 370px;
+  }
+  .spec-2 img {
+  width: 100%;
+  display: block;
   }
 }
 
@@ -85,22 +104,35 @@
 
 /* [모바일] 480px 이하 시 스타일 */
 @media screen and (max-width: 480px) {
+  .header-menu {
+    display: none;
+  }
   .product-info-section .swiper-wrapper {
     display: flex; /* Swiper가 다시 제어하도록 설정 */
     gap: 0;
     padding: 0;
+  }
+  .spec {
+    gap: 10px;
   }
   .spec-1,
   .spec-2,
   .spec-3 {
     /* max-width: none; */
     flex: 1; /* 동일한 너비 공유 */
-    width: 800px;
+    /* width: 800px; */
     height: 610px;
     background: #fff;
     border-radius: 15px;
     padding: 30px;
+
     text-align: center;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  }
+  .about-detail .question {
+    min-width: 350px;
+  }
+  .about-detail .answer {
+    min-width: 350px;
   }
 }
