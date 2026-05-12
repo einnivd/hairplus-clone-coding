@@ -72,8 +72,8 @@
 /* gotop */
 #gotop {
   position: fixed;
-  bottom: 100px;
-  right: 50px;
+  bottom: 10%;
+  right: 5%;
   padding: 20px;
   border-radius: 50%;
   background-color: #0043a3;
@@ -85,8 +85,8 @@
 /* 구매하러가기 버튼 */
 .purchase-btn {
   position: fixed;
-  bottom: 200px;
-  right: 50px;
+  bottom: 16%;
+  right: 5%;
   width: 180px;
   line-height: 50px;
   text-align: center;
@@ -97,8 +97,9 @@
 }
 /* 전체 영역 */
 .wrap {
-  min-width: 1400px;
-  margin: auto;
+  min-width: 390px;
+  /* max-width: 1400px; */
+  /* margin: auto; */
   background-color: #d2e5ff;
 }
 /* 헤더 */
@@ -106,18 +107,20 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  /* width: 1920px; */
   height: 80px;
+  padding: 0 3%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   /* background-color: #bcd8ff; */
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 /* 로고 */
 .header-logo img {
-  width: 120px;
+  width: 10%;
+  max-width: 120px;
+  min-width: 100px;
   padding: 10px 20px;
   filter: brightness(0.3);
 }
@@ -157,8 +160,8 @@ header {
 }
 /* view-more */
 .view-more {
-  width: 80px;
-  padding: 20px;
+  /* width: 80px; */
+  /* padding: 20px; */
   text-align: center;
   font-size: 25px;
 }
@@ -174,8 +177,10 @@ main .inner {
 }
 /* 영상 */
 .video {
-  width: 1400px;
-  height: 900px;
+  max-width: 1400px;
+  max-height: 900px;
+  min-height: 500px;
+
   overflow: hidden;
   /* background-color: thistle; */
 }
@@ -205,8 +210,9 @@ main .inner {
   gap: 80px;
 }
 .about-detail .question {
-  width: 450px;
-  height: 70px;
+  max-width: 450px;
+  min-width: 450px;
+  /* height: 70px; */
   text-align: center;
   line-height: 70px;
   border-radius: 50px 50px 0 0;
@@ -214,8 +220,8 @@ main .inner {
   background-color: #0043a3;
 }
 .about-detail .answer {
-  width: 450px;
-  height: 120px;
+  max-width: 450px;
+  /* height: 120px; */
   text-align: center;
   padding: 20px 10px;
   border-radius: 0 0 50px 50px;
@@ -252,7 +258,7 @@ main .inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1200px;
+  /* width: 1200px; */
   margin: 120px auto;
   color: #0043a3;
 }
@@ -282,10 +288,12 @@ main .inner {
   flex-direction: column;
   gap: 25px;
 }
+/* 제품 리뷰 */
+
 /* 푸터 */
 footer {
   /* width: 1920px; */
-  height: 377px;
+  /* height: 377px; */
   color: rgba(255, 255, 255, 0.5);
   background-color: #022b65;
   font-size: 16px;
@@ -294,12 +302,18 @@ footer {
   gap: 30px;
 }
 footer .inner {
-  width: 750px;
+  width: 90%;
+  max-width: 750px;
   margin: auto;
   /* background-color: rgb(60, 138, 95); */
 }
-footer ul {
+.tel ul,
+.address ul,
+.sns ul,
+.copyright ul,
+.company ul {
   display: flex;
+  flex-wrap: wrap;
 }
 .company,
 .tel,
@@ -308,6 +322,7 @@ footer ul {
 .copyright {
   margin: 30px 0;
 }
+
 /* 회사주소 */
 .address {
   display: flex;
