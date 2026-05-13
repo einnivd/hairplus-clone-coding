@@ -73,68 +73,73 @@
             <!-- 텍스트 -->
             <div class="txt">
               <h1>누적 판매 1000000개</h1>
-              <h3>손끝에 걸리지 않는 단백질의 힘</h3>
+              <h3>"손끝에 걸리지 않는 단백질의 힘"</h3>
               <h4>헤어플러스 단백질 본드 샴푸 1000ml</h4>
             </div>
             <!-- 이미지 -->
             <div class="img-box">
               <div class="product-img">
                 <img src="images/image-detail.png" alt="제품 이미지" />
-              </div>
-              <div class="emblem">
-                <img src="images/Emblem1.png" alt="앰블럼" />
-                <img src="images/Emblem2.png" alt="앰블럼" />
-                <img src="images/Emblem3.png" alt="앰블럼" />
+                <div class="emblem">
+                  <img src="images/Emblem1.png" alt="앰블럼" />
+                  <img src="images/Emblem2.png" alt="앰블럼" />
+                  <img src="images/Emblem3.png" alt="앰블럼" />
+                </div>
               </div>
             </div>
           </section>
           <!-- 자가진단 체크리스트 -->
           <section class="self-test">
+            <!-- 제목 -->
             <div class="title">
               <h2>손상모 자가진단 체크리스트</h2>
             </div>
-            <img src="images/check.png" alt="체크 이미지" />
+            <!-- 체크 이미지 -->
+            <img src="images/check.png" alt="체크 이미지" id="check" />
+            <!-- 목록 -->
             <div class="check-paper">
               <ul class="check-list">
                 <li>
-                  <input type="checkbox" />
-                  <p>머리를 빗을 때 모발 끝부분에서 툭툭 걸리거나 엉킨다.</p>
+                  <input type="checkbox" class="custom-checkbox"/>
+                  <label>머리를 빗을 때 모발 끝부분에서 툭툭 걸리거나 엉킨다.</label>
                 </li>
                 <li>
-                  <input type="checkbox" />
-                  <p>머리카락을 살짝 잡아당겼을 때 탄력 없이 툭 끊어진다.</p>
+                  <input type="checkbox" class="custom-checkbox"/>
+                  <label>머리카락을 살짝 잡아당겼을 때 탄력 없이 툭 끊어진다.</label>
                 </li>
                 <li>
-                  <input type="checkbox" />
-                  <p>
+                  <input type="checkbox" class="custom-checkbox"/>
+                  <label>
                     모발 끝이 'Y'자 형태로 갈라지거나 하얗게 점처럼 일어났다.
-                  </p>
+                  </label>
                 </li>
                 <li>
-                  <input type="checkbox" />
-                  <p>펌을 해도 컬이 탱글하지 않고 늘어지거나 금방 풀린다.</p>
+                  <input type="checkbox" class="custom-checkbox"/>
+                  <label>펌을 해도 컬이 탱글하지 않고 늘어지거나 금방 풀린다.</label>
                 </li>
                 <li>
-                  <input type="checkbox" />
-                  <p>
+                  <input type="checkbox" class="custom-checkbox"/>
+                  <label>
                     샴푸 거품을 낼 때 손가락이 머리카락 사이로 부드럽게 통과되지
                     않는다.
-                  </p>
+                  </label>
                 </li>
                 <li>
-                  <input type="checkbox" />
-                  <p>
+                  <input type="checkbox" class="custom-checkbox"/>
+                  <label>
                     비가 오거나 습한 날이면 머리가 평소보다 몇 배로 부풀어
                     오른다.
-                  </p>
+                  </label>
                 </li>
                 <li>
-                  <input type="checkbox" />
-                  <p>
+                  <input type="checkbox" class="custom-checkbox"/>
+                  <label>
                     트리트먼트를 해도 금방 건조해지고, 머리카락에 광택이 없다.
-                  </p>
+                  </label>
                 </li>
               </ul>
+               <hr class="divider">
+               <!-- 하단 문구 영역 -->
               <div class="check-result">
                 <p>
                   3가지 이상 체크하셨나요?<br />

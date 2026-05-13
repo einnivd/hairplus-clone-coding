@@ -123,6 +123,9 @@ main {
   display: block;
 }
 /* 제품 소개 */
+.produce {
+  background: linear-gradient(to top, #d2e5ff, #fff);
+}
 /* 텍스트 */
 .produce .txt {
   font-size: 1.5rem;
@@ -132,31 +135,148 @@ main {
   flex-direction: column;
   gap: 30px;
   margin-bottom: 30px;
+  white-space: nowrap;
 }
 /* 형광펜 효과 */
 .produce .txt h1 {
-  background: linear-gradient(to top, #fff490 50% , transparent 50%);
+  background: linear-gradient(to top, #fff490 50%, transparent 50%);
   margin: 0 15%;
 }
 /* 이미지 */
 .produce .img-box {
-  position: relative;
+  width: 100%;
   padding: 30px 0;
 }
 .produce .product-img {
-  width: 100%;
+  position: relative;
+  width: 65%;
   max-width: 500px;
   margin: auto;
 }
-.produce .product-img img{
+.produce .product-img > img {
   width: 100%;
   display: block;
 }
-.produce .emblem  {
+.produce .emblem {
   position: absolute;
   top: 5%;
-  right: -5%;
+  right: -15%;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
 }
+/* 자가진단 체크리스트 */
+.self-test {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  background-color: #ffffff;
+  border-radius: 32px;
+  padding: 64px 20px 48px 20px;
+  margin: 100px auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+/* 제목 */
+.title {
+  position: absolute;
+  top: -5%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0043a3;
+  color: #ffffff;
+  line-height: 80px;
+  padding: 0 100px;
+  border-radius: 30px;
+  white-space: nowrap;
+  box-shadow: 0 4px 10px rgba(43, 92, 183, 0.3);
+}
+/* 체크 이미지 */
+#check {
+  position: absolute;
+  top: -8%;
+  right: 10%;
+}
+/* 체크리스트 문항 디자인 */
+.checklist {
+  padding: 18px 0;
+  border-bottom: 1px solid #f0f4f8;
+}
+.check-list li {
+  display: flex;
+  gap: 5%;
+  padding: 30px 0;
+  margin: 0 30px;
+  border-bottom: 1px solid #ddd;
+}
+.check-list li:last-child {
+  border-bottom: none;
+}
+/* 커스텀 체크박스 구현 */
+.custom-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+.custom-checkbox + label {
+  position: relative;
+  padding-left: 36px;
+  cursor: pointer;
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  user-select: none;
+}
+
+/* 체크박스 기본 사각형 박스 */
+.custom-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 24px;
+  height: 24px;
+  background-color: #bcd1f3;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+/* 체크박스 활성화 상태 스타일 */
+.custom-checkbox:checked + label::before {
+  background-color: #2b5cb7;
+}
+
+/* 체크박스 내부 체크 아이콘(V) 생성 */
+.custom-checkbox:checked + label::after {
+  content: "✓";
+  position: absolute;
+  left: 6px;
+  top: 1px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* 마우스 호버 효과 */
+.checklist-item:hover label {
+  color: #1a202c;
+}
+
+/* 하단 점선 구분선 */
+.divider {
+  border: none;
+  border-top: 2px dashed #aaa;
+  margin: 40px 0;
+}
+
+/* 하단 문구 영역 */
+.check-result {
+  text-align: center;
+  margin: 80px 0 50px 0;
+  color: #0043a3;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+}
+
 /* 푸터 */
 footer {
   /* width: 1920px; */
