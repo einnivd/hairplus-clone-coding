@@ -1,0 +1,63 @@
+/* 사이드 메뉴 */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -350px;
+  width: 350px;
+  height: 100vh;
+  background: #fff;
+  z-index: 2000;
+
+  transition: 0.4s;
+  box-shadow: -5px 0 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 열렸을 때 */
+.side-menu.active {
+  right: 0;
+}
+
+.side-menu ul {
+  margin-top: 100px;
+}
+
+.side-menu li {
+  padding: 20px 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.side-menu a {
+  color: #222;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  border: none;
+  background: none;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+/* 배경 */
+.overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: 0.3s;
+  z-index: 1999;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}

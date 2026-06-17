@@ -1,0 +1,64 @@
+/* 푸터 */
+footer {
+  /* width: 1920px; */
+  /* height: 377px; */
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #022b65;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+footer .inner {
+  width: 90%;
+  max-width: 750px;
+  margin: auto;
+  /* background-color: rgb(60, 138, 95); */
+}
+.tel ul,
+.address ul,
+.sns ul,
+.copyright ul,
+.company ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.company,
+.tel,
+.address,
+.sns,
+.copyright {
+  margin: 30px 0;
+}
+
+/* 회사주소 */
+.address {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* SNS */
+.sns ul {
+  gap: 22px;
+}
+.sns ul li {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: #bcd8ff;
+}
+.sns img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+}
+footer span {
+  width: 1px;
+  height: 15px;
+  margin: 0 15px;
+  background: rgba(255, 255, 255, 0.4);
+  align-self: center;
+}

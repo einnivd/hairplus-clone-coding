@@ -24,8 +24,12 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/responsive_index.css">
-    <script src="js/gotop.js"></script>
-    <script src="js/modal.js"></script>
+    <link rel="stylesheet" href="css/view-more.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <script src="js/gotop.js" defer></script>
+    <script src="js/modal.js" defer></script>
+    <script src="js/view-more.js" defer></script>
   </head>
   <body>
     <!-- 모달창 -->
@@ -64,7 +68,9 @@
       <header>
         <!-- 로고 (헤더 왼쪽)-->
         <div class="header-logo">
-          <img src="images/brand-logo.png" alt="브랜드 로고" />
+          <a href="index.html">
+            <img src="images/brand-logo.png" alt="브랜드 로고" />
+          </a>
         </div>
         <!-- 헤더 오른쪽 -->
         <div class="header-right">
@@ -92,6 +98,22 @@
           </div>
         </div>
       </header>
+        <!-- 사이드 메뉴 -->
+      <section id="side-menu">
+        <div class="side-menu">
+          <button class="close-btn">&times;</button>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="brand-story.html">BRAND STORY</a></li>
+            <li><a href="product-detail.html">SHOP</a></li>
+            <li><a href="#">BEST</a></li>
+            <li><a href="#">REVIEW</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <!-- 배경 어둡게 -->
+        <div class="overlay"></div>
+      </section>
       <!-- 메인 -->
       <main>
         <div class="inner">

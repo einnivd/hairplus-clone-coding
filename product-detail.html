@@ -4,16 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>제품 상세</title>
+    <!-- 폰트어썸 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/product-detail.css" />
+    <link rel="stylesheet" href="css/view-more.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <script src="js/view-more.js" defer></script>
   </head>
   <body>
     <!-- 전체 영역 -->
     <div class="wrap">
+      <!-- 헤더 -->
       <header>
         <!-- 로고 (헤더 왼쪽)-->
         <div class="header-logo">
-          <img src="images/brand-logo.png" alt="브랜드 로고" />
+          <a href="index.html">
+            <img src="images/brand-logo.png" alt="브랜드 로고" />
+          </a>
         </div>
         <!-- 헤더 오른쪽 -->
         <div class="header-right">
@@ -41,6 +55,22 @@
           </div>
         </div>
       </header>
+      <!-- 사이드 메뉴 -->
+      <section id="side-menu">
+        <div class="side-menu">
+          <button class="close-btn">&times;</button>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="brand-story.html">BRAND STORY</a></li>
+            <li><a href="product-detail.html">SHOP</a></li>
+            <li><a href="#">BEST</a></li>
+            <li><a href="#">REVIEW</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <!-- 배경 어둡게 -->
+        <div class="overlay"></div>
+      </section>
       <!-- 메인 -->
       <main>
         <div class="inner">
@@ -232,7 +262,7 @@
                   <p>
                     아무리 좋은 영양을 채워도 문이 열려있다면 소용없습니다.
                     <br />
-                    pH 5.5 약산성 포뮬러가 들뜬 큐티클을 차분하게 정돈하여,<br>
+                    pH 5.5 약산성 포뮬러가 들뜬 큐티클을 차분하게 정돈하여,<br />
                     채워넣은 단백질 영양을 모발 깊숙이 홀딩합니다.
                   </p>
                 </div>
@@ -248,7 +278,7 @@
                 <div class="fragrance">
                   <div class="top" id="fragrance-box">
                     <div class="img-box">
-                      <img src="images/lime.png" alt="탑" id="top"/>
+                      <img src="images/lime.png" alt="탑" id="top" />
                     </div>
                     <div class="txt">
                       <h3>Top</h3>
@@ -260,7 +290,7 @@
                   </div>
                   <div class="middle" id="fragrance-box">
                     <div class="img-box">
-                      <img src="images/peony.jpg" alt="미들" id="middle"/>
+                      <img src="images/peony.jpg" alt="미들" id="middle" />
                     </div>
                     <div class="txt">
                       <h3>Middle</h3>
@@ -272,7 +302,7 @@
                   </div>
                   <div class="base" id="fragrance-box">
                     <div class="img-box">
-                      <img src="images/iris.png" alt="베이스" id="base"/>
+                      <img src="images/iris.png" alt="베이스" id="base" />
                     </div>
                     <div class="txt">
                       <h3>Base</h3>
@@ -293,18 +323,103 @@
               </div>
             </div>
           </section>
-          <!-- 제품 리뷰 -->
-          <section class="review">
-            <div class="score-box">
-              <div class="txt">
-                <p>"헤어플러스 단백질 본드 샴푸, 실제 변화로 증명합니다."</p>
-                <h1>
-                  4.9 /
-                  <p>5.0</p>
-                </h1>
+          <!-- 리뷰 -->
+          <section class="review-section">
+            <!-- 상단 평점 -->
+            <div class="review-score-box">
+              <p class="review-title">
+                "헤어플러스 단백질 본드 샴푸, 실제 변화로 증명합니다."
+              </p>
+
+              <div class="score">
+                <span class="big">4.9</span>
+                <span class="small">/ 5.0</span>
               </div>
-              <div class="image">
-                <img src="images/review-score.png" alt="별점" />
+
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+
+            <!-- 만족도 -->
+            <div class="satisfaction">
+              <div class="item">
+                <div class="bar">
+                  <p class="label">머릿결 부드러움 만족도</p>
+                  <div class="fill" style="width: 100%"></div>
+                </div>
+                <strong>100%</strong>
+              </div>
+
+              <div class="item">
+                <div class="bar">
+                  <p class="label">두피 저자극 만족도</p>
+                  <div class="fill" style="width: 99%"></div>
+                </div>
+                <strong>99%</strong>
+              </div>
+
+              <div class="item">
+                <div class="bar">
+                  <p class="label">향기 및 사용감 만족도</p>
+                  <div class="fill" style="width: 98%"></div>
+                </div>
+                <strong>98%</strong>
+              </div>
+            </div>
+
+            <!-- 리뷰 카드 -->
+            <div class="review-list">
+              <div class="review-card">
+                <img src="images/review1.png" alt="리뷰 이미지" />
+
+                <div class="review-content">
+                  <span class="id">ID : pure_****</span>
+
+                  <h4>
+                    "두피가 예민해서 아무거나 못 쓰는데, 이건 정말 순해요."
+                  </h4>
+
+                  <p>
+                    샴푸만 바꿔도 두피가 붉어지고 가려웠던 고민이었는데 지금은
+                    너무 편해졌어요. 거품감이 정말 좋고 향도 은은해서 계속 쓰게
+                    되는 제품입니다.
+                  </p>
+                </div>
+              </div>
+
+              <div class="review-card">
+                <img src="images/review2.png" alt="리뷰 이미지" />
+
+                <div class="review-content">
+                  <span class="id">ID : hair_****</span>
+
+                  <h4>"빗질할 때 툭툭 끊기던 머리카락이 드디어 살아났어요!"</h4>
+
+                  <p>
+                    염색과 펌을 반복해서 손상이 심했는데 사용 후 머릿결이 확실히
+                    달라졌습니다. 드라이 후에도 부드러움이 오래가요.
+                  </p>
+                </div>
+              </div>
+
+              <div class="review-card">
+                <img src="images/review3.png" alt="리뷰 이미지" />
+
+                <div class="review-content">
+                  <span class="id">ID : scent_****</span>
+
+                  <h4>"고급 호텔 어메니티 같은 향!"</h4>
+
+                  <p>
+                    향이 과하지 않고 은은하게 오래 남아서 사용할 때마다 기분이
+                    좋아져요. 가족들도 향이 좋다고 합니다.
+                  </p>
+                </div>
               </div>
             </div>
           </section>
@@ -312,7 +427,7 @@
           <section class="faq"></section>
         </div>
       </main>
-      <!-- FOOTER -->
+      <!-- 푸터 -->
       <footer>
         <div class="inner">
           <!-- 회사소개 -->
