@@ -16,7 +16,9 @@
     <link rel="stylesheet" href="css/product-detail.css" />
     <link rel="stylesheet" href="css/view-more.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <script src="js/gotop.js" defer></script>
     <script src="js/view-more.js" defer></script>
+    <script src="js/product-detail.js" defer></script>
   </head>
   <body>
     <!-- 전체 영역 -->
@@ -71,30 +73,49 @@
         <!-- 배경 어둡게 -->
         <div class="overlay"></div>
       </section>
+      <!-- gotop -->
+      <span id="gotop">
+        <i class="fa-solid fa-arrow-up"></i>
+      </span>
       <!-- 메인 -->
       <main>
         <div class="inner">
-          <!-- 구매창 -->
+          <!-- 구매 영역 -->
           <section class="pay">
+            <!-- 상품 이미지 -->
             <div class="img-box">
               <img src="images/product.png" alt="제품 이미지" />
             </div>
+
+            <!-- 상품 정보 -->
             <div class="pay-box">
               <div class="product-name">
                 <h2>헤어플러스 단백질 본드 샴푸</h2>
               </div>
+
               <div class="price">
                 <h3>판매가</h3>
-                <h3>25000원</h3>
+                <h3 class="unit-price">25,000원</h3>
               </div>
+
               <div class="count-total">
+                <!-- 수량 -->
                 <div class="count">
-                  <button>-</button>
-                  <button>+</button>
+                  <button class="minus">−</button>
+                  <span class="quantity">1</span>
+                  <button class="plus">+</button>
                 </div>
+
+                <!-- 총금액 -->
                 <div class="total">
-                  <h3>25000원</h3>
+                  <h3>25,000원</h3>
                 </div>
+              </div>
+
+              <!-- 구매 버튼 -->
+              <div class="pay-buttons">
+                <button class="cart-btn">장바구니</button>
+                <button class="buy-btn">바로구매</button>
               </div>
             </div>
           </section>
@@ -130,46 +151,46 @@
             <div class="check-paper">
               <ul class="check-list">
                 <li>
-                  <input type="checkbox" class="custom-checkbox" />
-                  <label
+                  <input type="checkbox" id="check1" class="custom-checkbox" />
+                  <label for="check1"
                     >머리를 빗을 때 모발 끝부분에서 툭툭 걸리거나 엉킨다.</label
                   >
                 </li>
                 <li>
-                  <input type="checkbox" class="custom-checkbox" />
-                  <label
+                  <input type="checkbox" id="check2" class="custom-checkbox" />
+                  <label for="check2"
                     >머리카락을 살짝 잡아당겼을 때 탄력 없이 툭 끊어진다.</label
                   >
                 </li>
                 <li>
-                  <input type="checkbox" class="custom-checkbox" />
-                  <label>
+                  <input type="checkbox" id="check3" class="custom-checkbox" />
+                  <label for="check3">
                     모발 끝이 'Y'자 형태로 갈라지거나 하얗게 점처럼 일어났다.
                   </label>
                 </li>
                 <li>
-                  <input type="checkbox" class="custom-checkbox" />
-                  <label
+                  <input type="checkbox" id="check4" class="custom-checkbox" />
+                  <label for="check4"
                     >펌을 해도 컬이 탱글하지 않고 늘어지거나 금방 풀린다.</label
                   >
                 </li>
                 <li>
-                  <input type="checkbox" class="custom-checkbox" />
-                  <label>
+                  <input type="checkbox" id="check5" class="custom-checkbox" />
+                  <label for="check5">
                     샴푸 거품을 낼 때 손가락이 머리카락 사이로 부드럽게 통과되지
                     않는다.
                   </label>
                 </li>
                 <li>
-                  <input type="checkbox" class="custom-checkbox" />
-                  <label>
+                  <input type="checkbox" id="check6" class="custom-checkbox" />
+                  <label for="check6">
                     비가 오거나 습한 날이면 머리가 평소보다 몇 배로 부풀어
                     오른다.
                   </label>
                 </li>
                 <li>
-                  <input type="checkbox" class="custom-checkbox" />
-                  <label>
+                  <input type="checkbox" id="check7" class="custom-checkbox" />
+                  <label for="check7">
                     트리트먼트를 해도 금방 건조해지고, 머리카락에 광택이 없다.
                   </label>
                 </li>
@@ -276,45 +297,41 @@
                 </div>
                 <!-- 향기 노트 -->
                 <div class="fragrance">
-                  <div class="top" id="fragrance-box">
+                  <div class="fragrance-box">
                     <div class="img-box">
-                      <img src="images/lime.png" alt="탑" id="top" />
+                      <img src="images/lime.png" alt="Top Note" />
                     </div>
+
                     <div class="txt">
                       <h3>Top</h3>
-                      <p>
-                        lime, green mango,<br />
-                        grape fruit, carrot
-                      </p>
+                      <p>lime, green mango,<br />grapefruit, carrot</p>
                     </div>
                   </div>
-                  <div class="middle" id="fragrance-box">
+
+                  <div class="fragrance-box">
                     <div class="img-box">
-                      <img src="images/peony.jpg" alt="미들" id="middle" />
+                      <img src="images/peony.jpg" alt="Middle Note" />
                     </div>
+
                     <div class="txt">
                       <h3>Middle</h3>
-                      <p>
-                        freesia, peony, <br />
-                        hyacinth, verbena
-                      </p>
+                      <p>freesia, peony,<br />hyacinth, verbena</p>
                     </div>
                   </div>
-                  <div class="base" id="fragrance-box">
+
+                  <div class="fragrance-box">
                     <div class="img-box">
-                      <img src="images/iris.png" alt="베이스" id="base" />
+                      <img src="images/iris.png" alt="Base Note" />
                     </div>
+
                     <div class="txt">
                       <h3>Base</h3>
-                      <p>
-                        iris, baby powder, <br />
-                        musk, labdanum
-                      </p>
+                      <p>iris, baby powder,<br />musk, labdanum</p>
                     </div>
                   </div>
                 </div>
                 <!-- 하단 텍스트 -->
-                <div class="point-txt">
+                <div class="txt-box">
                   <p>
                     "씻어내는 내내 느껴지는 맑은 공기, 당신의 일상에 싱그러운
                     쉼표를 찍어줍니다."
@@ -424,7 +441,99 @@
             </div>
           </section>
           <!-- FAQ -->
-          <section class="faq"></section>
+          <section class="faq">
+            <div class="faq-inner">
+              <h2>구매 전 꼭 확인하세요! 단백질 샴푸 FAQ</h2>
+
+              <div class="faq-item active">
+                <button class="faq-question">
+                  <span
+                    >Q1. 약산성 샴푸는 세정력이 약해서 금방 기름지지
+                    않나요?</span
+                  >
+                  <span class="faq-icon">−</span>
+                </button>
+
+                <div class="faq-answer">
+                  <p>
+                    A. 아닙니다. 저희 제품은 두피에 순한 <strong
+                      >약산성(pH 5.5)</strong
+                    >을 유지하면서도, 쫀쫀하고 미세한 고밀도 거품이 두피의
+                    노폐물과 과도한 유분만 선택적으로 제거합니다. 저녁까지
+                    산뜻하고 보송보송한 두피 상태를 경험하실 수 있습니다.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  <span
+                    >Q2. 단백질 성분이 손상된 머리결에 어떻게 작용하나요?</span
+                  >
+                  <span class="faq-icon">+</span>
+                </button>
+
+                <div class="faq-answer">
+                  <p>
+                    A. 모발의 80%는 단백질로 이루어져 있습니다. 본 제품은 입자가
+                    작은 <strong>저분자 LPP 단백질</strong>을 함유하여, 샴푸
+                    과정에서 벌어진 큐티클 사이로 영양을 직접 채워줍니다. 텅 빈
+                    모발 속을 단백질로 꽉 채워주어 힘없고 푸석한 모발을 탄탄하고
+                    매끄럽게 가꿔줍니다.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  <span>Q3. 실리콘 성분이 들어있나요?</span>
+                  <span class="faq-icon">+</span>
+                </button>
+
+                <div class="faq-answer">
+                  <p>
+                    A. <strong>실리콘 성분을 배제(Silicone-Free)</strong>하여
+                    두피 모공을 막지 않으면서도, 단백질 영양 성분만으로 부드러운
+                    머릿결을 구현했습니다. 인위적인 미끌거림이 아닌, 모발 자체가
+                    건강해져서 느껴지는 찰랑거림을 확인해 보세요.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  <span>Q4. 임산부나 어린이가 사용해도 괜찮나요?</span>
+                  <span class="faq-icon">+</span>
+                </button>
+
+                <div class="faq-answer">
+                  <p>
+                    A. 네, 안심하고 사용하셔도 됩니다. 전 성분 <strong
+                      >EWG 그린 등급</strong
+                    > 지향 및 피부 자극 테스트에서 자극 지수 0.00 판정을
+                    받았습니다. 설페이트계 계면활성제 등 유해 성분을 뺀 순한
+                    처방으로 온 가족이 함께 사용할 수 있는 '안심 샴푸'입니다.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  <span>Q5. 더 드라마틱한 머릿결 변화를 보는 팁이 있나요?</span>
+                  <span class="faq-icon">+</span>
+                </button>
+
+                <div class="faq-answer">
+                  <p>
+                    A. 거품을 낸 뒤 <strong>1~2분 정도 '단백질 팩'</strong>을
+                    한다는 느낌으로 방치해 주세요. 영양 성분이 모발 깊숙이
+                    흡수되어 트리트먼트를 한 듯한 부드러움을 극대화할 수
+                    있습니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </main>
       <!-- 푸터 -->

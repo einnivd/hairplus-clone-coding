@@ -74,6 +74,8 @@ main .inner {
   max-width: 1400px;
   margin: auto;
   padding: 80px 0;
+  font-family: "Pretendard";
+  line-height: 2rem;
 }
 main .inner h1{
   color: #0043a3;
@@ -86,11 +88,13 @@ main .inner h1{
   gap: 50px;
 }
 .story-img {
-  width: 200px;
+  height: 350px;
+  /* width: 200px; */
   /* background-color: yellowgreen; */
 }
 .story-img img {
-  width: 100%;
+  height: 100%;
+  /* width: 100%; */
   /* display: block; */
 }
 .story-txt {

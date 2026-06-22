@@ -1,3 +1,9 @@
+/* body */
+body{
+   font-family: "Pretendard";
+   letter-spacing: 0.05em;
+   line-height: 1.5rem;
+}
 /* 모달창 */
 .modal-wrap {
   position: fixed;
@@ -296,4 +302,3 @@ main .inner {
   gap: 25px;
 }
 /* 제품 리뷰 */
-
